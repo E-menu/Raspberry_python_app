@@ -1,4 +1,4 @@
-# Raspberry_python_app
+# Raspberry_python_app  ( new features on branch develop ) 
 An app for Raspberry Pi with touch screen to send customer's orders. 
 
 # First step 
