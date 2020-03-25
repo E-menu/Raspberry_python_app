@@ -8,8 +8,7 @@ window = Tk()
 window.title("Customer app")
 window.geometry('800x480')
 
-lbl = Label(window,text="Correct resolution")
-lbl.grid(column=0,row=0)
-
 # Main loop 
 window.mainloop()
+
+
