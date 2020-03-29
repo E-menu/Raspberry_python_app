@@ -11,4 +11,4 @@ Configured Raspberry Pi and touch display. Loaded first simple program with corr
 
 Added weather API, some buttons, date function, tried adding background photo, but wasn't able to do it
 
-![Zdjecie Pi4](photos/app_2.jpg)
+![Zdjecie Pi4](photos/app_2.png)
