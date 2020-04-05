@@ -1,15 +1,15 @@
 <root>
 
-  <course>
+  <dish>
     <title>Kotlet</title>
-  </course>
+  </dish>
 
-  <course>
+  <dish>
     <title>Wołowinka</title>
-  </course>
+  </dish>
 
-  <course>
+  <dish>
     <title>Fryteczki</title>
-  </course>
+  </dish>
   
 </root>
