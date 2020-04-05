@@ -17,6 +17,14 @@ from weatherApi import *
 from saveOrder import *
 from returnDate import *
 
+# A variable for customer's bill
+bill = []
+bill.append(0.00)
+
+# A variable to remember specific item price
+price = []
+price.append(0.00)
+
 # Exit Function
 def exitFunction():
     exit()
@@ -95,16 +103,24 @@ class PageOne (eMenu.Frame):
         main_meals = 'mainMeals.xml'
         full_file = os.path.abspath(os.path.join('menu_items',main_meals))
         dom = ElementTree.parse(full_file)
-        meals = dom.findall('/dish/title')
+        meals = dom.findall('./dish/title')
 
         # To save meal names that will be used to save order in .txt file
         names= []
         # To save generated buttons
         btn = []
+        # To save item's prices
+        prices = []
 
         for m in meals:
             names.append(m.text)
 
+        product_prices = dom.findall('dish/price')    
+
+
+        for p in product_prices:
+            prices.append(p.text)
+        
         i=0
         # Generating labels
         for name in names: 
@@ -112,11 +128,17 @@ class PageOne (eMenu.Frame):
             lb.grid(row=i, column=0,padx=5,pady=5)
             i += 1
 
+        i=0    
+        for p in prices:
+            lb = Label(self, text=p,font='Helvetica 18 bold')
+            lb.grid(row=i, column=1,padx=5,pady=5)
+            i += 1    
+            
         i=0
         # Generating buttons with assigned functions
         for name in names:
-            btn.append(Button(self, text="Zamów", command=lambda c=i:saveOrder(names[c])))
-            btn[i].grid(row=i, column=1,padx=5,pady=5) 
+            btn.append(Button(self, text="Zamów", command=lambda c=i:saveOrder(names[c],bill,prices[c])))
+            btn[i].grid(row=i, column=2,padx=5,pady=5) 
             i += 1    
             
         
