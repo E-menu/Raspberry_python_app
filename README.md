@@ -18,3 +18,24 @@ Added weather API, some buttons, date function, tried adding background photo, b
 Added buttons and labels dynamically based on XML file. Added to every single button function 'order' ( dynamically too ). Added product prices , actual bill and message box showing actual bill while ordering.
 
 ![Zdjecie Pi4](photos/item_and_price.png)
+
+XML file examle :
+
+<root>
+
+  <dish>
+    <title>Kotlet</title>
+    <price>10.00</price>
+  </dish>
+
+  <dish>
+    <title>Wołowinka</title>
+    <price>15.00</price>
+  </dish>
+
+  <dish>
+    <title>Fryteczki</title>
+    <price>12.00</price>
+  </dish>
+  
+</root>
