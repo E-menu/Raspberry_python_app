@@ -19,23 +19,6 @@ Added buttons and labels dynamically based on XML file. Added to every single bu
 
 ![Zdjecie Pi4](photos/item_and_price.png)
 
-XML file examle :
+XML file example :
 
-<root>
-
-  <dish>
-    <title>Kotlet</title>
-    <price>10.00</price>
-  </dish>
-
-  <dish>
-    <title>Wołowinka</title>
-    <price>15.00</price>
-  </dish>
-
-  <dish>
-    <title>Fryteczki</title>
-    <price>12.00</price>
-  </dish>
-  
-</root>
+![Zdjecie Pi4](photos/xml.png)
