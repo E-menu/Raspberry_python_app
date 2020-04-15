@@ -3,6 +3,18 @@ An app for Raspberry Pi with touch screen to send customer's orders.
 
 # First step 
 
+Changed resolution for touch screen in boot config file.
+```sh
+$ cd boot/
+```
+
+>max_usb_current=1
+>hdmi_group=2
+>hdmi_mode=87
+>hdmi_cvt 800 480 60 6 0 0 0
+>hdmi_drive=1
+
+
 Configured Raspberry Pi and touch display. Loaded first simple program with correct resolution. 
 
 ![Zdjecie Pi4](photos/pi_photo_new.png)
