@@ -5,7 +5,7 @@ An app for Raspberry Pi with touch screen to send customer's orders.
 
 Configured Raspberry Pi and touch display. Loaded first simple program with correct resolution. 
 
-![Zdjecie Pi4](photos/pi_photo.jpg)
+![Zdjecie Pi4](photos/pi_photo_new.png)
 
 # Second step
 
