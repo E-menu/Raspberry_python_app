@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-# Raspberry_python_app  ( new features on branch develop ) 
-=======
 # Raspberry_python_app
->>>>>>> develop
+
 An app for Raspberry Pi with touch screen to send customer's orders. 
 
 # First step 
@@ -16,11 +13,11 @@ $ cd boot/
 
 Changes done in _config.txt_ file : 
 
-> max_usb_current=1   
-> hdmi_group=2   
-> hdmi_mode=87   
-> hdmi_cvt 800 480 60 6 0 0 0   
-> hdmi_drive=1  
+> max_usb_current=1     
+> hdmi_group=2     
+> hdmi_mode=87     
+> hdmi_cvt 800 480 60 6 0 0 0     
+> hdmi_drive=1    
 
 	   	       
 Loaded first simple program with correct resolution : 
