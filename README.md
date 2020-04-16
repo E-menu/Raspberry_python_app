@@ -23,7 +23,6 @@ Changes done in _config.txt_ file :
 Loaded first simple program with correct resolution : 
 
 ```python
-<<<<<<< HEAD
 # Added a Python package for GUI apps    
 from tkinter import *  
    
@@ -36,20 +35,6 @@ window.geometry('800x480')
    
 # Main loop   
 window.mainloop()  
-=======
-# Added a Python package for GUI apps    
-from tkinter import *  
-   
-# Inicialazing new window  
-window = Tk()  
-  
-# Window title and resolution   
-window.title("Customer app")  
-window.geometry('800x480')  
-   
-# Main loop   
-window.mainloop()  
->>>>>>> develop
 ```
 
 ![Zdjecie Pi4](photos/pi_photo_new.png)
