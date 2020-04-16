@@ -21,19 +21,23 @@ Changes done in _config.txt_ file :
 > hdmi_drive=1
 
 
-Configured Raspberry Pi and touch display. Loaded first simple program with correct resolution. 
+Configured Raspberry Pi and touch display. 
+Loaded first simple program with correct resolution. 
 
 ![Zdjecie Pi4](photos/pi_photo_new.png)
 
 # Second step
 
-Added weather API, some buttons, date function, tried adding background photo, but wasn't able to do it
+Added weather API, some buttons, date function. 
+Tried adding background photo, but wasn't able to do it.
 
 ![Zdjecie Pi4](photos/app_2.png)
 
 # Third step
 
-Added buttons and labels dynamically based on XML file. Added to every single button function 'order' ( dynamically too ). Added product prices , actual bill and message box showing actual bill while ordering.
+Added buttons and labels dynamically based on XML file. 
+Added to every single button function 'order' ( dynamically too ). 
+Added product prices, actual bill and message box showing actual bill while ordering.
 
 ![Zdjecie Pi4](photos/emenu_1.PNG)
 ![Zdjecie Pi4](photos/emenu_2.PNG)
