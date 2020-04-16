@@ -8,10 +8,14 @@ Changed resolution for touch screen in boot config file.
 $ cd boot/
 ```
 
-> max_usb_current=1
-> hdmi_group=2
-> hdmi_mode=87
-> hdmi_cvt 800 480 60 6 0 0 0
+> max_usb_current=1 
+
+> hdmi_group=2 
+
+> hdmi_mode=87 
+
+> hdmi_cvt 800 480 60 6 0 0 0 
+
 > hdmi_drive=1
 
 
