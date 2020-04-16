@@ -20,19 +20,20 @@ Changes done in _config.txt_ file :
 Configured Raspberry Pi and touch display.   
 Loaded first simple program with correct resolution. 
 
-> // Added a Python package for GUI apps    
-> from tkinter import *  
->   
-> // Inicialazing new window  
-> window = Tk()  
->  
-> // Window title and resolution   
-> window.title("Customer app")  
-> window.geometry('800x480')  
->   
-> //Main loop   
-> window.mainloop()  
-
+```python
+# Added a Python package for GUI apps    
+from tkinter import *  
+   
+# Inicialazing new window  
+window = Tk()  
+  
+# Window title and resolution   
+window.title("Customer app")  
+window.geometry('800x480')  
+   
+# Main loop   
+window.mainloop()  
+```
 
 ![Zdjecie Pi4](photos/pi_photo_new.png)
 
