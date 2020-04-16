@@ -55,4 +55,21 @@ Added product prices, actual bill and message box showing actual bill while orde
 
 ## XML file example :
 
-![Zdjecie Pi4](photos/xml.png)
+```xml
+<root>
+	<dish>
+		<title>Kotlet</title>
+		<price>10.00</price>
+	</dish>
+
+	<dish>
+		<title>Wołowinka</title>
+		<price>15.00</price>
+	</dish>
+
+	<dish>
+		<title>Fryteczki</title>
+		<price>12.00</price>
+	</dish>
+</root>
+```
