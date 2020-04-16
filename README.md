@@ -3,6 +3,8 @@ An app for Raspberry Pi with touch screen to send customer's orders.
 
 # First step 
 
+Configured Raspberry Pi and touch display.  
+  
 Changed resolution for touch screen in boot config file.
 ```sh
 $ cd boot/
@@ -16,8 +18,6 @@ Changes done in _config.txt_ file :
 > hdmi_cvt 800 480 60 6 0 0 0   
 > hdmi_drive=1  
 
-
-Configured Raspberry Pi and touch display.
 	   	       
 Loaded first simple program with correct resolution : 
 
