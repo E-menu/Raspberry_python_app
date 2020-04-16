@@ -17,8 +17,8 @@ Changes done in _config.txt_ file :
 > hdmi_drive=1  
 
 
-Configured Raspberry Pi and touch display.   
-Loaded first simple program with correct resolution. 
+Configured Raspberry Pi and touch display.     
+Loaded first simple program with correct resolution : 
 
 ```python
 # Added a Python package for GUI apps    
