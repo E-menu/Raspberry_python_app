@@ -53,6 +53,6 @@ Added product prices, actual bill and message box showing actual bill while orde
 ![Zdjecie Pi4](photos/emenu_1.PNG)
 ![Zdjecie Pi4](photos/emenu_2.PNG)
 
-XML file example :
+## XML file example :
 
 ![Zdjecie Pi4](photos/xml.png)
