@@ -1,18 +1,53 @@
 <root>
 
   <dish>
-    <title>Kotlet</title>
+    <title>Pierogi ruskie</title>
     <price>10.00</price>
+    <weight>400 g</weight>
   </dish>
 
   <dish>
-    <title>Wołowinka</title>
+    <title>Gulasz wołowy</title>
     <price>15.00</price>
+    <weight>400 g</weight>
   </dish>
 
   <dish>
-    <title>Fryteczki</title>
+    <title>Spaghetti bolognese</title>
     <price>12.00</price>
+    <weight>350 g</weight>
   </dish>
+
+  <dish>
+    <title>Pstrąg pieczony</title>
+    <price>20.00</price>
+    <weight>300 g</weight>
+  </dish>
+
+   <dish>
+    <title>Filet z kurczaka</title>
+    <price>11.00</price>
+    <weight>400 g</weight>
+  </dish>
+
+  <dish>
+    <title>Placki ziemniaczane</title>
+    <price>10.00</price>
+    <weight>450 g</weight>
+  </dish>
+
+  <dish>
+    <title>Bigos</title>
+    <price>10.00</price>
+    <weight>400 g</weight>
+  </dish>
+
+  <dish>
+    <title>Kotlet mielony</title>
+    <price>10.00</price>
+    <weight>300 g</weight>
+  </dish>
+
+ 
   
 </root>
