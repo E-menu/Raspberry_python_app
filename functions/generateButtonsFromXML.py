@@ -39,7 +39,7 @@ def makeButtonsFromXML(self,findInXML,xmlFileName,columnNumber,bill,prices,nextM
     i=0
     # Generating buttons with assigned functions
     for name in labelsName:
-        btn.append(Button(self, text="Zamów",
+        btn.append(Button(self, text="Dodaj",
         command=lambda c=i:saveOrder(labelsName[c],prices[c],bill,nextMealsPrices,nextMealsNames)))
 
         btn[i].grid(row=i+1, column=4,padx=5,pady=5)

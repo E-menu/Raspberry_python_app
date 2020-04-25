@@ -68,6 +68,16 @@ class eMenuApp(eMenu.Tk):
         frame = self.frames[cont]
         frame.tkraise()
 
+    def show_first_frame(self, cont,nextMealsNames,nextMealsPrices):
+
+        # If we go to first page we ALWAYS will be ordering from beginning
+        bill[0]=0.00
+        nextMealsNames.clear()
+        nextMealsPrices.clear()
+
+        frame = self.frames[cont]
+        frame.tkraise()
+
 ##############
 # Start Page #
 ##############
@@ -79,8 +89,8 @@ class StartPage(eMenu.Frame):
 
         makeStartPage(self)
 
-        buttonMakeOrder = eMenu.Button( self,text="Złóż zamówienie",font=EXTRA_LARGE_FONT,width=15,height=3,
-                                        command=lambda: controller.show_frame(PageOne))
+        buttonMakeOrder = eMenu.Button( self,text="Nowe zamówienie",font=EXTRA_LARGE_FONT,width=15,height=3,
+                                        command=lambda: controller.show_first_frame(PageOne,nextMealsNames,nextMealsPrices))
         buttonMakeOrder.grid(row=1,column=1,padx=20,pady=20)
 
         buttonCloseApp = eMenu.Button( self,text="Zamknij aplikację",foreground="white",font=EXTRA_LARGE_FONT,
@@ -100,13 +110,9 @@ class PageOne (eMenu.Frame):
         tmpInt = 0
         tmpInt=makeFirstPage(self,bill,nextMealsPrices,nextMealsNames)
 
-        buttonGoBack = eMenu.Button( self,text="Wróć",font=LARGE_FONT,width=8,height=2,
-                                        command=lambda: controller.show_frame(StartPage))
-        buttonGoBack.grid(row=tmpInt+1,column=0,padx=10,pady=5)
-
         buttonNextPage = eMenu.Button( self,text="Następna strona",font=LARGE_FONT,width=15,height=2,
                                         command=lambda: controller.show_frame(StartPage))
-        buttonNextPage.grid(row=tmpInt+1,column=1,padx=10,pady=5)
+        buttonNextPage.grid(row=tmpInt+1,column=0,padx=10,pady=5)
 
 # Launch this app , add title, set geometry and make a mainloop
 app = eMenuApp()
