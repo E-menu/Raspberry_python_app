@@ -86,5 +86,11 @@ window.mainloop()
 ![Zdjecie Pi4](photos/emenu_3.png)
 
 
+# Fifth step
 
+- Added next two pages of meals and drinks.  
+- Changed a little bit app GUI.  
+- Now when we clck add new order , we delete current meals and bill.  
+
+![Zdjecie Pi4](photos/step.png)
 
