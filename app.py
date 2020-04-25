@@ -29,9 +29,11 @@ from startPage import *
 bill = []
 bill.append(0.00)
 
-# A variable to remember specific item price
-price = []
-price.append(0.00)
+# A variable to remember next item in order price
+nextMealsPrices = []
+
+# A variable to remember next item in order name
+nextMealsNames = []
 
 # Exit Function
 def exitFunction():
@@ -96,7 +98,7 @@ class PageOne (eMenu.Frame):
         eMenu.Frame.__init__(self,parent)
 
         tmpInt = 0
-        tmpInt=makeFirstPage(self,bill)
+        tmpInt=makeFirstPage(self,bill,nextMealsPrices,nextMealsNames)
 
         buttonGoBack = eMenu.Button( self,text="Wróć",font=LARGE_FONT,width=8,height=2,
                                         command=lambda: controller.show_frame(StartPage))

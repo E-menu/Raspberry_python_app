@@ -16,7 +16,7 @@ from generateLabelsFromXML import *
 from generateButtonsFromXML import *
 # end
 
-def makeFirstPage (self,bill):
+def makeFirstPage (self,bill,nextMealsPrices,nextMealsNames):
 
     # reading XML file
     mainMeals = 'mainMeals.xml'
@@ -60,7 +60,7 @@ def makeFirstPage (self,bill):
     makeLabelsFromXML(self,findInXML,xmlFileName,1)
 
     findInXML = 'title'
-    tmpInt=makeButtonsFromXML(self,findInXML,xmlFileName,4,bill,tmpPrices)
+    tmpInt=makeButtonsFromXML(self,findInXML,xmlFileName,4,bill,tmpPrices,nextMealsPrices,nextMealsNames)
 
 
     labelInfoPageNumber = eMenu.Label(self, text="Strona : 1/3", foreground="blue",font='Helvetica 18 bold')

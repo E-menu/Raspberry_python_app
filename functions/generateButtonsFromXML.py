@@ -19,7 +19,7 @@ sys.path.append(os.path.abspath("/"))
 from saveOrder import *
 # end
 
-def makeButtonsFromXML(self,findInXML,xmlFileName,columnNumber,bill,prices):
+def makeButtonsFromXML(self,findInXML,xmlFileName,columnNumber,bill,prices,nextMealsPrices,nextMealsNames):
 
     # reading XML file
     xmlName = '{}'.format(xmlFileName)
@@ -39,7 +39,9 @@ def makeButtonsFromXML(self,findInXML,xmlFileName,columnNumber,bill,prices):
     i=0
     # Generating buttons with assigned functions
     for name in labelsName:
-        btn.append(Button(self, text="Zamów", command=lambda c=i:saveOrder(labelsName[c],bill,prices[c])))
+        btn.append(Button(self, text="Zamów",
+        command=lambda c=i:saveOrder(labelsName[c],prices[c],bill,nextMealsPrices,nextMealsNames)))
+
         btn[i].grid(row=i+1, column=4,padx=5,pady=5)
         i += 1
 
