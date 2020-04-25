@@ -86,3 +86,5 @@ window.mainloop()
 ![Zdjecie Pi4](photos/emenu_3.png)
 
 
+
+
