@@ -83,5 +83,5 @@ window.mainloop()
 - Organized files.   
 - Made some functions in order not to repeat code.  
 
-![Zdjecie Pi4](photos/emenu_3.PNG)
+![Zdjecie Pi4](photos/emenu_3.png)
 
