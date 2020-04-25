@@ -1,0 +1,59 @@
+<root>
+
+  <dish>
+    <title>Woda</title>
+    <price>5.00</price>
+    <weight>200 ml</weight>
+    <description>Woda mineralna</description>
+  </dish>
+
+  <dish>
+    <title>Kompot</title>
+    <price>6.00</price>
+    <weight>300 ml</weight>
+    <description>Kompot domowy</description>
+  </dish>
+
+  <dish>
+    <title>Fanta</title>
+    <price>7.00</price>
+    <weight>400 ml</weight>
+    <description>Napój gazowany</description>
+  </dish>
+
+  <dish>
+    <title>Pepsi</title>
+    <price>7.00</price>
+    <weight>400 ml</weight>
+    <description>Napój gazowany</description>
+  </dish>
+
+  <dish>
+    <title>Sprite</title>
+    <price>7.00</price>
+    <weight>400 ml</weight>
+    <description>Napój gazowany</description>
+  </dish>
+
+  <dish>
+    <title>Kawa</title>
+    <price>8.00</price>
+    <weight>400 ml</weight>
+    <description>Kawa z mlekiem</description>
+  </dish>
+
+  <dish>
+    <title>Mleko</title>
+    <price>4.00</price>
+    <weight>250 ml</weight>
+    <description>Świeże mleko</description>
+  </dish>
+
+  <dish>
+    <title>Herbata</title>
+    <price>5.00</price>
+    <weight>300 ml</weight>
+    <description>Herbata z cyryną</description>
+  </dish>
+
+</root>

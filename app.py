@@ -19,7 +19,7 @@ sys.path.append(os.path.abspath("functions"))
 from weatherApi import *
 from saveOrder import *
 from returnDate import *
-from firstPage import *
+from mealsPages import *
 from setFullScreen import *
 from startPage import *
 # end
@@ -55,7 +55,7 @@ class eMenuApp(eMenu.Tk):
 
         self.frames = {}
 
-        for F in (StartPage,PageOne):
+        for F in (StartPage,PageOne,PageTwo,PageThree):
 
             frame = F(container,self)
             self.frames[F] = frame
@@ -108,7 +108,39 @@ class PageOne (eMenu.Frame):
         eMenu.Frame.__init__(self,parent)
 
         tmpInt = 0
-        tmpInt=makeFirstPage(self,bill,nextMealsPrices,nextMealsNames)
+        tmpInt=makeMealPage(self,bill,nextMealsPrices,nextMealsNames,'mainMeals.xml','Dania główne',1)
+
+        buttonNextPage = eMenu.Button( self,text="Następna strona",font=LARGE_FONT,width=15,height=2,
+                                        command=lambda: controller.show_frame(PageTwo))
+        buttonNextPage.grid(row=tmpInt+1,column=0,padx=10,pady=5)
+
+###############
+# Second Page #
+###############
+
+class PageTwo (eMenu.Frame):
+
+    def __init__(self,parent,controller):
+        eMenu.Frame.__init__(self,parent)
+
+        tmpInt = 0
+        tmpInt=makeMealPage(self,bill,nextMealsPrices,nextMealsNames,'additives.xml','Dodatki',2)
+
+        buttonNextPage = eMenu.Button( self,text="Następna strona",font=LARGE_FONT,width=15,height=2,
+                                        command=lambda: controller.show_frame(PageThree))
+        buttonNextPage.grid(row=tmpInt+1,column=0,padx=10,pady=5)
+
+###############
+# Third Page  #
+###############
+
+class PageThree (eMenu.Frame):
+
+    def __init__(self,parent,controller):
+        eMenu.Frame.__init__(self,parent)
+
+        tmpInt = 0
+        tmpInt=makeMealPage(self,bill,nextMealsPrices,nextMealsNames,'drinks.xml','Napoje',3)
 
         buttonNextPage = eMenu.Button( self,text="Następna strona",font=LARGE_FONT,width=15,height=2,
                                         command=lambda: controller.show_frame(StartPage))

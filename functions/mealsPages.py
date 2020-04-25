@@ -16,18 +16,17 @@ from generateLabelsFromXML import *
 from generateButtonsFromXML import *
 # end
 
-def makeFirstPage (self,bill,nextMealsPrices,nextMealsNames):
+def makeMealPage (self,bill,nextMealsPrices,nextMealsNames,xmlName,itemsTitle,pageNumber,):
 
     # reading XML file
-    mainMeals = 'mainMeals.xml'
-    fullFile = os.path.abspath(os.path.join('menu_items',mainMeals))
+    xmlFileName = str(xmlName)
+    fullFile = os.path.abspath(os.path.join('menu_items',xmlFileName))
     dom = ElementTree.parse(fullFile)
 
-    xmlFileName = 'mainMeals.xml'
     tmpInt = 0
     tmpPrices = []
 
-    labelInfoMainMeals = eMenu.Label(self, text="Dania główne",
+    labelInfoMainMeals = eMenu.Label(self, text="{}".format(itemsTitle),
                                 foreground="green",font='Verdana 15 bold')
     labelInfoMainMeals.grid(row=0,column=0,padx=5,pady=5)
 
@@ -63,7 +62,7 @@ def makeFirstPage (self,bill,nextMealsPrices,nextMealsNames):
     tmpInt=makeButtonsFromXML(self,findInXML,xmlFileName,4,bill,tmpPrices,nextMealsPrices,nextMealsNames)
 
 
-    labelInfoPageNumber = eMenu.Label(self, text="Strona : 1/3", foreground="blue",font='Helvetica 18 bold')
+    labelInfoPageNumber = eMenu.Label(self, text="Strona : {}/3".format(pageNumber), foreground="blue",font='Helvetica 18 bold')
     labelInfoPageNumber.grid(row=tmpInt+1,column=4,padx=10,pady=5)
 
     return tmpInt

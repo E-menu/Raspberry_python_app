@@ -1,0 +1,59 @@
+<root>
+
+  <dish>
+    <title>Frytki</title>
+    <price>5.00</price>
+    <weight>200 g</weight>
+    <description>Pyszne frytki</description>
+  </dish>
+
+  <dish>
+    <title>Sałatka</title>
+    <price>7.00</price>
+    <weight>300 g</weight>
+    <description>Pyszna sałatka</description>
+  </dish>
+
+  <dish>
+    <title>Krążki cebulowe</title>
+    <price>10.00</price>
+    <weight>400 g</weight>
+    <description>Pyszne krążki cebulowe</description>
+  </dish>
+
+  <dish>
+    <title>Ser panierowany</title>
+    <price>8.00</price>
+    <weight>300 g</weight>
+    <description>Pyszny serek</description>
+  </dish>
+
+  <dish>
+    <title>Makaron</title>
+    <price>5.00</price>
+    <weight>200 g</weight>
+    <description>Pyszny makaron</description>
+  </dish>
+
+  <dish>
+    <title>Ryż</title>
+    <price>5.00</price>
+    <weight>200 g</weight>
+    <description>Pyszny ryż</description>
+  </dish>
+
+  <dish>
+    <title>Ziemniaki</title>
+    <price>5.00</price>
+    <weight>200 g</weight>
+    <description>Pyszne ziemniaki</description>
+  </dish>
+
+  <dish>
+    <title>Buraczki czerwone</title>
+    <price>3.50</price>
+    <weight>110 g</weight>
+    <description>Pyszne buraczki</description>
+  </dish>
+
+</root>
