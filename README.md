@@ -75,3 +75,13 @@ window.mainloop()
 	</dish>
 </root>
 ```
+
+# Fourth step 
+
+- Cleared code.  
+- Added some changes in xml file.  
+- Organized files.   
+- Made some functions in order not to repeat code.  
+
+![Zdjecie Pi4](photos/emenu_3.PNG)
+
