@@ -2,7 +2,7 @@
 from tkinter import messagebox
 # end
 
-# Save order in .txt file function
+# Save order in arrays
 def saveOrder(mealName,price,bill,nextMealsPrices,nextMealsNames):
 
     # Saving info about an order in arrays

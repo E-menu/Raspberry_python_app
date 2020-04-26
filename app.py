@@ -22,6 +22,8 @@ from returnDate import *
 from mealsPages import *
 from setFullScreen import *
 from startPage import *
+from showOrder import *
+from sendOrder import *
 # end
 
 
@@ -55,7 +57,7 @@ class eMenuApp(eMenu.Tk):
 
         self.frames = {}
 
-        for F in (StartPage,PageOne,PageTwo,PageThree):
+        for F in (StartPage,PageOne,PageTwo,PageThree,SummaryPage):
 
             frame = F(container,self)
             self.frames[F] = frame
@@ -143,12 +145,46 @@ class PageThree (eMenu.Frame):
         tmpInt=makeMealPage(self,bill,nextMealsPrices,nextMealsNames,'drinks.xml','Napoje',3)
 
         buttonNextPage = eMenu.Button( self,text="Następna strona",font=LARGE_FONT,width=15,height=2,
-                                        command=lambda: controller.show_frame(StartPage))
+                                        command=lambda: controller.show_frame(SummaryPage))
         buttonNextPage.grid(row=tmpInt+1,column=0,padx=10,pady=5)
+
+################
+# Summary Page #
+################
+
+class SummaryPage (eMenu.Frame):
+
+    def __init__(self,parent,controller):
+        eMenu.Frame.__init__(self,parent)
+
+        labelSummaryPage = eMenu.Label(self, text="Podsumowanie", font='Helvetica 24 bold')
+        labelSummaryPage.pack()
+
+        textSummaryOrder = eMenu.Text(self,height=15,width=60)
+        textSummaryOrder.configure(font=("Times New Roman", 16, "bold"))
+        textSummaryOrder.pack()
+
+        buttons=eMenu.Frame(self)
+
+
+        buttonShoworder = eMenu.Button( buttons,text="Pokaż zamówienie",font=LARGE_FONT,width=15,height=2,
+                                                command=lambda: showOrder(self,bill,nextMealsNames,nextMealsPrices,textSummaryOrder))
+        buttonShoworder.grid(row=0,column=0,padx=5)
+
+        buttonNextPage = eMenu.Button( buttons,text="Wyślij zamówienie",font=LARGE_FONT,width=15,height=2,
+                                                        command=lambda: sendOrder(self,textSummaryOrder))
+        buttonNextPage.grid(row=0,column=1,padx=5)
+
+        buttonStartPage = eMenu.Button( buttons,text="Strona startowa",font=LARGE_FONT,width=15,height=2,
+                                                        command=lambda: controller.show_frame(StartPage) )
+        buttonStartPage.grid(row=0,column=2,padx=5)
+
+        buttons.pack(padx=5,pady=5)
 
 # Launch this app , add title, set geometry and make a mainloop
 app = eMenuApp()
 app.title('eMenu')
 app.geometry('800x480')
+app.resizable(False, False)
 #appFull=FullScreenApp(app)
 app.mainloop()
