@@ -94,3 +94,9 @@ window.mainloop()
 
 ![Zdjecie Pi4](photos/step.png)
 
+# Sixth step
+
+- Added summary page that shows our current order.  
+
+![Zdjecie Pi4](photos/summary.png)
+
