@@ -80,6 +80,13 @@ class eMenuApp(eMenu.Tk):
         frame = self.frames[cont]
         frame.tkraise()
 
+    def show_start_page(self,cont,textSummaryOrder):
+
+        textSummaryOrder.delete(1.0,END)
+
+        frame = self.frames[cont]
+        frame.tkraise()
+
 ##############
 # Start Page #
 ##############
@@ -176,7 +183,7 @@ class SummaryPage (eMenu.Frame):
         buttonNextPage.grid(row=0,column=1,padx=5)
 
         buttonStartPage = eMenu.Button( buttons,text="Strona startowa",font=LARGE_FONT,width=15,height=2,
-                                                        command=lambda: controller.show_frame(StartPage) )
+                                                        command=lambda: controller.show_start_page(StartPage,textSummaryOrder) )
         buttonStartPage.grid(row=0,column=2,padx=5)
 
         buttons.pack(padx=5,pady=5)
