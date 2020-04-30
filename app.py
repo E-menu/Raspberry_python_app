@@ -178,9 +178,9 @@ class SummaryPage (eMenu.Frame):
                                                 command=lambda: showOrder(self,bill,nextMealsNames,nextMealsPrices,textSummaryOrder))
         buttonShoworder.grid(row=0,column=0,padx=5)
 
-        buttonNextPage = eMenu.Button( buttons,text="Wyślij zamówienie",font=LARGE_FONT,width=15,height=2,
+        buttonSendOrder = eMenu.Button( buttons,text="Wyślij zamówienie",font=LARGE_FONT,width=15,height=2,
                                                         command=lambda: sendOrder(self,textSummaryOrder))
-        buttonNextPage.grid(row=0,column=1,padx=5)
+        buttonSendOrder.grid(row=0,column=1,padx=5)
 
         buttonStartPage = eMenu.Button( buttons,text="Strona startowa",font=LARGE_FONT,width=15,height=2,
                                                         command=lambda: controller.show_start_page(StartPage,textSummaryOrder) )

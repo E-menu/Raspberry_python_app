@@ -100,3 +100,7 @@ window.mainloop()
 
 ![Zdjecie Pi4](photos/summary.png)
 
+# Program demo 
+
+![](photos/gif.gif)
+
