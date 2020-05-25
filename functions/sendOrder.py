@@ -12,7 +12,57 @@ import tkinter as eMenu
 from tkinter import *
 # end
 
-def sendOrder(self,textSummaryOrder):
+# Importing library to connect to serwer to send orders
+import socket
+import time
+# end 
 
-    textSummaryOrder.delete(1.0,END)
-    messagebox.showinfo("Powiadomienie","Udało się wysłać zamówienie !")
+def sendOrder(self,textSummaryOrder,bill,nextMealsNames,nextMealsPrices,s):
+
+    billInt = int (bill[0])
+
+    if billInt == 0:
+
+        textSummaryOrder.delete(1.0,END)
+        messagebox.showinfo("Powiadomienie","Nie wysłano pustego zamówienia !")
+
+        print("\n Nie wysłano zamównienia, bowiem jest puste \n")
+        
+    else:
+        textSummaryOrder.delete(1.0,END)
+
+        message = ""
+        
+        for i in range(0,len(nextMealsNames)):
+            message += nextMealsNames[i-1]
+            message += "C"
+            message += nextMealsPrices[i-1]
+            message += "K"
+        
+        mainMessage = "\u0044\u0001NICK13"
+        mainMessage += message
+
+
+        lengthOfMessage = len(mainMessage.encode('utf-8'))
+        lengthOfMessageInt = int(lengthOfMessage)
+
+
+        print("Dlugosc wiadomosci : ",lengthOfMessageInt)
+
+        bytes1 = bytes( [lengthOfMessageInt] )
+        bytes2 = mainMessage.encode('utf-8')
+        allbytes = bytes1 + bytes2
+
+        time.sleep(2)
+
+        s.send(allbytes)
+        from_server = s.recv(2)
+        print("\nOdpowiedz serwera :",from_server,"\n")
+
+        print("Wysłano zamówienie \n")
+        
+        messagebox.showinfo("Powiadomienie","Udało się wysłać zamówienie !")
+
+        bill[0]=0.00
+        nextMealsNames.clear()
+        nextMealsPrices.clear()

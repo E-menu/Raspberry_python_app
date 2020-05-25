@@ -26,6 +26,10 @@ from showOrder import *
 from sendOrder import *
 # end
 
+# Importing library to connect to serwer to send orders
+import socket
+import time
+# end 
 
 # A variable for customer's bill
 bill = []
@@ -37,8 +41,30 @@ nextMealsPrices = []
 # A variable to remember next item in order name
 nextMealsNames = []
 
+##############################
+# Connecting to TCIP server  #
+#############################\
+s = socket.socket()          
+port = 13000                
+
+result = s.connect_ex(('192.168.1.11', port))
+if result == 0:
+   print ("Port is open, connected")
+   message = "\u0011NICK12" 
+   byt = message.encode('utf-8')
+   s.send(byt)
+   
+else:
+   print ("Port is not open, not connected")
+   exit()
+
+########
+# end #
+#######
+
 # Exit Function
-def exitFunction():
+def exitFunction(s):
+    s.close()  
     exit()
 
 # Main class , everything we have done here is to add new pages in our app
@@ -103,7 +129,7 @@ class StartPage(eMenu.Frame):
         buttonMakeOrder.grid(row=1,column=1,padx=20,pady=20)
 
         buttonCloseApp = eMenu.Button( self,text="Zamknij aplikację",foreground="white",font=EXTRA_LARGE_FONT,
-                                bg="red",width=15,height=3,command=exitFunction)
+                                       bg="red",width=15,height=3,command=lambda:exitFunction(s))
         buttonCloseApp.grid(row=2,column=1,padx=20,pady=20)
 
 
@@ -179,7 +205,7 @@ class SummaryPage (eMenu.Frame):
         buttonShoworder.grid(row=0,column=0,padx=5)
 
         buttonSendOrder = eMenu.Button( buttons,text="Wyślij zamówienie",font=LARGE_FONT,width=15,height=2,
-                                                        command=lambda: sendOrder(self,textSummaryOrder))
+                                                        command=lambda: sendOrder(self,textSummaryOrder,bill,nextMealsNames,nextMealsPrices,s))
         buttonSendOrder.grid(row=0,column=1,padx=5)
 
         buttonStartPage = eMenu.Button( buttons,text="Strona startowa",font=LARGE_FONT,width=15,height=2,
