@@ -34,15 +34,16 @@ def sendOrder(self,textSummaryOrder,bill,nextMealsNames,nextMealsPrices,s):
         message = ""
         
         for i in range(0,len(nextMealsNames)):
+            message += ";"
             message += nextMealsNames[i-1]
-            message += "C"
+            message += ","
             message += nextMealsPrices[i-1]
-            message += "K"
         
-        mainMessage = "\u0044\u0001NICK13"
+        mainMessage = "\u0044\u0001PCAPPK1"
         mainMessage += message
 
-
+        print(mainMessage)
+        
         lengthOfMessage = len(mainMessage.encode('utf-8'))
         lengthOfMessageInt = int(lengthOfMessage)
 
