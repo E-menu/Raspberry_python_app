@@ -18,21 +18,21 @@
     <title>Fanta</title>
     <price>7.00</price>
     <weight>400 ml</weight>
-    <description>Napój gazowany</description>
+    <description>Napoj gazowany</description>
   </dish>
 
   <dish>
     <title>Pepsi</title>
     <price>7.00</price>
     <weight>400 ml</weight>
-    <description>Napój gazowany</description>
+    <description>Napoj gazowany</description>
   </dish>
 
   <dish>
     <title>Sprite</title>
     <price>7.00</price>
     <weight>400 ml</weight>
-    <description>Napój gazowany</description>
+    <description>Napoj gazowany</description>
   </dish>
 
   <dish>
@@ -46,14 +46,14 @@
     <title>Mleko</title>
     <price>4.00</price>
     <weight>250 ml</weight>
-    <description>Świeże mleko</description>
+    <description>Swieze mleko</description>
   </dish>
 
   <dish>
     <title>Herbata</title>
     <price>5.00</price>
     <weight>300 ml</weight>
-    <description>Herbata z cyryną</description>
+    <description>Herbata z cyryna</description>
   </dish>
 
 </root>

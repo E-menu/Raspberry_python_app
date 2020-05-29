@@ -8,7 +8,7 @@
   </dish>
 
   <dish>
-    <title>Gulasz wołowy</title>
+    <title>Gulasz wolowy</title>
     <price>15.00</price>
     <weight>400 g</weight>
     <description>Pyszny gulasz</description>
@@ -22,10 +22,10 @@
   </dish>
 
   <dish>
-    <title>Pstrąg pieczony</title>
+    <title>Pstrag pieczony</title>
     <price>20.00</price>
     <weight>300 g</weight>
-    <description>Pyszny pstrąg</description>
+    <description>Pyszny pstrag</description>
   </dish>
 
    <dish>

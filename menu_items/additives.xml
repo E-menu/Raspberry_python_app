@@ -8,17 +8,17 @@
   </dish>
 
   <dish>
-    <title>Sałatka</title>
+    <title>Salatka</title>
     <price>7.00</price>
     <weight>300 g</weight>
-    <description>Pyszna sałatka</description>
+    <description>Pyszna salatka</description>
   </dish>
 
   <dish>
-    <title>Krążki cebulowe</title>
+    <title>Krazki cebulowe</title>
     <price>10.00</price>
     <weight>400 g</weight>
-    <description>Pyszne krążki cebulowe</description>
+    <description>Pyszne krazki cebulowe</description>
   </dish>
 
   <dish>
@@ -36,10 +36,10 @@
   </dish>
 
   <dish>
-    <title>Ryż</title>
+    <title>Ryz</title>
     <price>5.00</price>
     <weight>200 g</weight>
-    <description>Pyszny ryż</description>
+    <description>Pyszny ryz</description>
   </dish>
 
   <dish>
