@@ -96,7 +96,7 @@ window.mainloop()
 # Sixth step
 
 - Added summary page that shows our current order.  
-- Added sending order info to TCIP Serwer
+- Added sending order info to TCIP Serwer.
 
 
 
