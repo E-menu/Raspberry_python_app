@@ -2,6 +2,12 @@
 
 An app for Raspberry Pi with touch screen to send customer's orders. 
 
+![Zdjecie Pi4](photos/projekt_photo.png)
+
+# Program demo 
+
+![](photos/gif.gif)
+
 # First step 
 
 Configured Raspberry Pi and touch display.  
@@ -37,14 +43,11 @@ window.geometry('800x480')
 window.mainloop()  
 ```
 
-![Zdjecie Pi4](photos/pi_photo_new.png)
-
 # Second step
 
 - Added weather API, some buttons, date function.   
 - Tried adding background photo, but wasn't able to do it.
 
-![Zdjecie Pi4](photos/app_2.png)
 
 # Third step
 
@@ -52,8 +55,6 @@ window.mainloop()
 - Added to every single button function 'order' ( dynamically too ).   
 - Added product prices, actual bill and message box showing actual bill while ordering.
 
-![Zdjecie Pi4](photos/emenu_1.PNG)
-![Zdjecie Pi4](photos/emenu_2.PNG)
 
 ## XML file example :
 
@@ -83,7 +84,6 @@ window.mainloop()
 - Organized files.   
 - Made some functions in order not to repeat code.  
 
-![Zdjecie Pi4](photos/emenu_3.png)
 
 
 # Fifth step
@@ -92,15 +92,13 @@ window.mainloop()
 - Changed a little bit app GUI.  
 - Now when we clck add new order , we delete current meals and bill.  
 
-![Zdjecie Pi4](photos/step.png)
 
 # Sixth step
 
 - Added summary page that shows our current order.  
+- Added sending order info to TCIP Serwer
 
-![Zdjecie Pi4](photos/summary.png)
 
-# Program demo 
 
-![](photos/gif.gif)
+
 
